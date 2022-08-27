@@ -1,0 +1,140 @@
+body {
+  font-family: "Delius", cursive;
+  margin: 0;
+  height: 100vh;
+  background-color: #884425;
+  color: #311646;
+}
+
+*:first-letter {
+  text-transform: capitalize;
+}
+
+.roundBorder {
+  border-radius: 1.5rem;
+}
+
+.list {
+  margin: 25px auto;
+  padding: 25px;
+  background-color: #dea450;
+  width: 100%;
+  max-width: 350px;
+}
+
+.titulo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.titulo h1 {
+  font-family: "Righteous", cursive;
+  color: #dea450;
+  background-color: #311646;
+  text-align: center;
+  padding: 10px;
+  border-radius: 0.5rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.titulo a {
+  font-family: "Delius", cursive;
+  color: #3f0c18;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: #dea450;
+  text-align: center;
+  padding: 10px;
+  border-radius: 0.5rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.titulo a:hover {
+  color: #dea450;
+  background-color: #311646;
+  transition-duration: 1s;
+}
+
+.date {
+  font-family: "Righteous", cursive;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dateRight {
+  display: flex;
+  align-items: center;
+}
+
+#dateNumber {
+  font-size: 3rem;
+}
+
+#dateText {
+  letter-spacing: 3px;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+#dateMonth, #dateNumber, #dateText {
+  font-weight: bold;
+}
+
+#dateMonth, #dateYear {
+  margin-left: 5px;
+  font-size: 1.5rem;
+}
+
+form {
+  margin: 20px 0;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: auto 50px auto;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+}
+
+input {
+  border: solid 3px #3f0c18;
+  padding: 10px;
+  background-color: #dea450;
+}
+input:focus {
+  outline: none;
+}
+
+.addTaskButton, .orderButton {
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.addTaskButton {
+  height: 35px;
+  border-radius: 0.5rem;
+  font-size: 2rem;
+  background-color: #dea450;
+}
+
+.orderButton {
+  background-color: #311646;
+  color: #dea450;
+}
+
+.task {
+  background-color: #3f0c18;
+  padding: 15px;
+  margin-top: 15px;
+  color: #dea450;
+  cursor: pointer;
+}
+
+.done {
+  background-color: #295f3a;
+  color: #dea450;
+  text-decoration: line-through;
+}

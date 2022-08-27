@@ -1,0 +1,130 @@
+$fonttitulo: 'Righteous', cursive;
+$font: 'Delius', cursive;
+$verde:#295f3a;
+$violeta: #311646;
+$bordo:#3f0c18;
+$naranja: #884425;
+$amarillo: #dea450;
+
+body{
+    font-family: $font;
+    margin: 0;
+    height: 100vh;
+    background-color: $naranja;
+    color: $violeta;
+}
+*:first-letter{
+    text-transform: capitalize;
+}
+.roundBorder{
+    border-radius: 1.5rem;
+}
+.list{
+    margin:25px auto;
+    padding:25px;
+    background-color: $amarillo;
+    width: 100%;
+    max-width: 350px;
+}
+.titulo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1{
+        font-family: $fonttitulo;
+        color: $amarillo;
+        background-color: $violeta;
+        text-align: center;
+        padding: 10px;
+        border-radius: 00.5rem;
+        width: fit-content;
+    }
+    a{
+        font-family: $font;
+        color: $bordo;
+        font-weight: bold;
+        text-decoration: none;
+        background-color: $amarillo;
+        text-align: center;
+        padding: 10px;
+        border-radius: 00.5rem;
+        width: fit-content;
+        &:hover{
+            color: $amarillo;
+            background-color: $violeta;
+            transition-duration: 1s;
+        }
+    }
+}
+.date{
+    font-family: $fonttitulo;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.dateRight{
+    display: flex;
+    align-items: center;
+}
+#dateNumber{
+    font-size: 3rem;
+}
+#dateText{
+    letter-spacing: 3px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+
+}
+#dateMonth, #dateNumber, #dateText{
+    font-weight: bold;
+}
+#dateMonth, #dateYear{
+    margin-left: 5px;
+    font-size: 1.5rem;
+}
+
+form{
+    margin: 20px 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: auto 50px auto;
+    column-gap: 15px;
+}
+input{
+    border: solid 3px $bordo;
+    padding: 10px;
+    background-color: $amarillo;
+
+    &:focus{
+        outline: none;
+    }
+}
+
+.addTaskButton, .orderButton{
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+.addTaskButton{
+    height: 35px;
+    border-radius: 0.5rem;
+    font-size: 2rem;
+    background-color: $amarillo;
+}
+.orderButton{
+    background-color: $violeta;
+    color: $amarillo;
+}
+.task{
+    background-color: $bordo;
+    padding: 15px;
+    margin-top: 15px;
+    color: $amarillo;
+    cursor: pointer;
+}
+.done{
+    background-color: $verde;
+    color: $amarillo;
+    text-decoration: line-through;
+}
