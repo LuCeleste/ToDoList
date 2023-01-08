@@ -1,0 +1,43 @@
+
+body{
+    margin: 0;
+    height: 100vh;
+    color: $negro;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+
+.list{
+    margin:25px auto;
+    padding:25px;
+    width: 100%;
+    max-width: 350px;
+    border: solid .1rem;
+}
+.titulo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
+
+}
+
+
+#dateText{
+    letter-spacing: 3px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+
+}
+
+
+form{
+    margin: 20px 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: auto 50px auto;
+    column-gap: 15px;
+}

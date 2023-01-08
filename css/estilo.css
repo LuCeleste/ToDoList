@@ -1,9 +1,11 @@
 body {
-  font-family: "Delius", cursive;
+  font-family: "Jost", sans-serif;
   margin: 0;
   height: 100vh;
-  background-color: #884425;
-  color: #311646;
+  background-color: rgba(156, 95, 109, 0.2196078431);
+  color: #000000;
+  display: flex;
+  flex-direction: column;
 }
 
 *:first-letter {
@@ -11,15 +13,16 @@ body {
 }
 
 .roundBorder {
-  border-radius: 1.5rem;
+  border-radius: 0.5rem;
 }
 
 .list {
   margin: 25px auto;
-  padding: 25px;
-  background-color: #dea450;
-  width: 100%;
-  max-width: 350px;
+  padding: 20px;
+  max-width: 80vw;
+  border: solid 0.1rem;
+  background-color: #ffffff;
+  box-shadow: 9px 12px 35px 2px rgba(0, 0, 0, 0.72);
 }
 
 .titulo {
@@ -27,39 +30,30 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 20px;
 }
 .titulo h1 {
-  font-family: "Righteous", cursive;
-  color: #dea450;
-  background-color: #311646;
+  color: #000000;
   text-align: center;
   padding: 10px;
   border-radius: 0.5rem;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
 }
 .titulo a {
-  font-family: "Delius", cursive;
-  color: #3f0c18;
+  color: #000000;
   font-weight: bold;
   text-decoration: none;
-  background-color: #dea450;
   text-align: center;
   padding: 10px;
+  border: solid 0.1rem;
   border-radius: 0.5rem;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
 }
 .titulo a:hover {
-  color: #dea450;
-  background-color: #311646;
+  color: #ffffff;
+  background-color: #000000;
   transition-duration: 1s;
 }
 
 .date {
-  font-family: "Righteous", cursive;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -76,7 +70,7 @@ body {
 
 #dateText {
   letter-spacing: 3px;
-  font-size: 1.5rem;
+  font-size: 1rem;
   text-transform: uppercase;
 }
 
@@ -90,18 +84,18 @@ body {
 }
 
 form {
-  margin: 20px 0;
+  margin: 2px 0;
   display: grid;
   grid-auto-flow: column;
-  grid-template-columns: auto 50px auto;
-  -moz-column-gap: 15px;
-       column-gap: 15px;
+  grid-template-columns: 120px 50px auto;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
 }
 
 input {
-  border: solid 3px #3f0c18;
+  border: solid 2px #9c5f6d;
   padding: 10px;
-  background-color: #dea450;
+  background-color: #ffffff;
 }
 input:focus {
   outline: none;
@@ -117,24 +111,62 @@ input:focus {
   height: 35px;
   border-radius: 0.5rem;
   font-size: 2rem;
-  background-color: #dea450;
+  background-color: #ffffff;
 }
 
 .orderButton {
-  background-color: #311646;
-  color: #dea450;
+  background-color: #000000;
+  color: #ffffff;
 }
 
 .task {
-  background-color: #3f0c18;
+  background-color: #9c5f6d;
   padding: 15px;
   margin-top: 15px;
-  color: #dea450;
+  color: #ffffff;
   cursor: pointer;
 }
 
 .done {
-  background-color: #295f3a;
-  color: #dea450;
+  background-color: #487455;
+  color: #ffffff;
   text-decoration: line-through;
+}
+
+@media only screen and (min-width: 1024px) {
+  body {
+    margin: 0;
+    height: 100vh;
+    color: #000000;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .list {
+    margin: 25px auto;
+    padding: 25px;
+    width: 100%;
+    max-width: 350px;
+    border: solid 0.1rem;
+  }
+  .titulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
+  }
+  #dateText {
+    letter-spacing: 3px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+  }
+  form {
+    margin: 20px 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: auto 50px auto;
+    -moz-column-gap: 15px;
+         column-gap: 15px;
+  }
 }
